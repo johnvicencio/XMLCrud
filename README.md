@@ -1,24 +1,26 @@
 # XMLCrud
-Console application about facts repository. You can add a question about a fact of the world and enter an factual answer to it. It uses C# Console application with XML as the database with CRUD. 
+This is a console application that serves as a facts repository. Users can add a question about a fact of the world and enter a factual answer to it. The application uses C# Console application with XML as the database with CRUD (Create, Read, Update, and Delete) operations.
 
 # Problem 
-Create a C# application that uses a CRUD (Create, Read, Update, and Delete) technique to display, manipulate, and delete data. Use a database that can collect records about facts. A fact has an Id, Question and Answer columns.
+The task is to develop a C# application that utilizes CRUD operations to display, manipulate, and delete data. The application should use a database to store records about facts. Each fact should have an Id, Question, and Answer column.
 
 # Solution
-Build a prototype for a C# application that uses CRUD and an XML file to collect records of facts with Id, Question, and Answer columns. The XML file will be the database; a database is simply a collection of data where one can retrieve and use the data (even when it's robusness isn't on par with other databases like MS SQL Server, MySQL, SQLite, and so on). 
+To solve this problem, a prototype C# application was developed that uses CRUD operations and an XML file to store facts records. The application consists of two classes: Fact (which holds properties like Id, Question, and Answer) and FactController (which handles the logic of the application like CRUD operations). A console input menu was also created to allow for various CRUD operations, including entering data, displaying data, updating data, deleting data, and exiting the application.
 
-## Psudo Code
-1. Create a C# Console (.NET Core) up using Visual Studio
-2. Name it XMLCrud
-3. Create two classes: Fact (that will holds properties: Id, Question, Answer) and FactController (that handles the logic of the application like CRUD)
-4. Create an console input menu for doing various CRUD: 1. Enter data, 2. Display data, 3. Update data, 4. Delete data, 0. To exit the application
-5. Use an XML file: every records saved are serialized and deserialized when read. 
+The application uses an XML file as its database. Each record saved is serialized and deserialized when read. Although an XML database may not have the same robustness as other databases like MS SQL Server, MySQL, SQLite, it serves the purpose for this application.
+
+## Pseudo Code
+1. Create a C# Console (.NET Core) up using Visual Studio.
+2. Name the application XMLCrud.
+3. Create two classes: Fact (that holds properties: Id, Question, Answer) and FactController (that handles the logic of the application like CRUD).
+4. Create a console input menu for various CRUD operations: 1. Enter data, 2. Display data, 3. Update data, 4. Delete data, 0. To exit the application.
+5. Use an XML file as the database. Every record saved is serialized and deserialized when read.
 
 ## What is XML?
-XML formats data into a hierarchy and represents data that it holds. HTML also has elmenets into a hierarchy that represents data. But XML describes the content rather than desribes the content. The XML 'file' is itself 'the database' in this case, because it has the data (each record has Id, Question, and Answer). 
+XML stands for Extensible Markup Language, and it is a markup language that formats data into a hierarchy and represents the data that it holds. Although HTML also has elements that represent data in a hierarchy, XML describes the content rather than describes the content. In this application, the XML file itself serves as the database because it contains data for each record, which includes the Id, Question, and Answer.
 
-## Working with the application
-1. Run the application
-2. A terminal window will show a menu to select
-3. Enter or follow the instruction on the screen
-4. Press 0 to exit the applicaiton 
+## Using the application
+1. Run the application.
+2. A terminal window will show a menu for selection.
+3. Follow the instructions on the screen to perform various CRUD operations.
+4. Press 0 to exit the application.

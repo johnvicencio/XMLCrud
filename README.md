@@ -17,8 +17,7 @@ The application uses an XML file as its database. Each record saved is serialize
 5. Use an XML file as the database. Every record saved is serialized and deserialized when read.
 
 ## What is XML?
-XML stands for Extensible Markup Language, and it is a markup language that formats data into a hierarchy and represents the data that it holds. Although HTML also has elements that represent data in a hierarchy, XML describes the content rather than describes the content. In this application, the XML file itself serves as the database because it contains data for each record, which includes the Id, Question, and Answer.
-
+XML is an acronym for Extensible Markup Language, a markup language that structures data into a hierarchy and represents the information it contains. Unlike HTML, which also has elements that arrange data hierarchically, XML describes the content rather than its presentation. In this application, the XML file serves as the database because it contains the data for each record, including the Id, Question, and Answer. However, in reality, even a JSON file or a plain text file that organizes data in a meaningful way can also serve as a database.
 ## Using the application
 1. Run the application.
 2. A terminal window will show a menu for selection.

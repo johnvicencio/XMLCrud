@@ -60,10 +60,10 @@ public class FactController
         }
     }
 
-    private void Save(List<Fact> people)
+    private void Save(List<Fact> facts)
     {
         using var writer = new StreamWriter(_xmlFilePath);
-        _xmlSerializer.Serialize(writer, people);
+        _xmlSerializer.Serialize(writer, facts);
         writer.Flush();
         writer.Close();
     }
